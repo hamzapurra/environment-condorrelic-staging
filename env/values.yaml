@@ -1,5 +1,5 @@
 expose:
-  Args: 
+  Args:
     - --v
     - 4
   Annotations:
@@ -7,14 +7,14 @@ expose:
     helm.sh/hook-delete-policy: hook-succeeded
 
 cleanup:
-  Args: 
+  Args:
     - --cleanup
   Annotations:
     helm.sh/hook: pre-delete
     helm.sh/hook-delete-policy: hook-succeeded
 expose:
   config:
-    domain: 52.29.172.82.nip.io
+    domain: test.zendy.io
     exposer: Ingress
     http: "true"
     tlsacme: "false"
