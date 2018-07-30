@@ -1,3 +1,6 @@
+# https://github.com/jenkins-x/exposecontroller/issues/137
+urltemplate: "{{.Service}}.{{.Domain}}"
+
 expose:
   Args:
     - --v
@@ -13,12 +16,12 @@ cleanup:
     helm.sh/hook: pre-delete
     helm.sh/hook-delete-policy: hook-succeeded
 expose:
-  config:
-    domain: test.zendy.io
-    exposer: Ingress
-    http: "true"
-    tlsacme: "false"
-    urltemplate: "{{.Service}}.{{.Domain}}"
+  # config:
+  #   domain: test.zendy.io
+  #   exposer: Ingress
+  #   http: "true"
+  #   tlsacme: "false"
+  #   urltemplate: "{{.Service}}.{{.Domain}}"
   Annotations:
     helm.sh/hook: post-install,post-upgrade
     helm.sh/hook-delete-policy: hook-succeeded
