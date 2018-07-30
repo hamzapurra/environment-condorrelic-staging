@@ -1,15 +1,7 @@
 dependencies:
-# - alias: expose
-#   name: exposecontroller
-#   repository: https://chartmuseum.build.cd.jenkins-x.io
-#   version: 2.3.58
-# - alias: cleanup
-#   name: exposecontroller
-#   repository: https://chartmuseum.build.cd.jenkins-x.io
-#   version: 2.3.58
 - name: zendy-api
   repository: http://jenkins-x-chartmuseum:8080
-  version: 2.0.0-rc.17
+  version: 2.0.0-rc.19
 - name: zendy-cockpit
   repository: http://jenkins-x-chartmuseum:8080
   version: 2.0.0-rc.9
