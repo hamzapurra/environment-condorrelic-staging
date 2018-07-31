@@ -22,3 +22,6 @@ spec:
         backend:
           serviceName: zendy-cockpit
           servicePort: 80
+      - backend:
+          serviceName: zendy-ui
+          servicePort: 80
